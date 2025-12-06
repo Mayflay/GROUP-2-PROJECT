@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolinao Falls | Group 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">Bolinao Falls</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#how-to-get-there">How to Get There</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#review">Review</a></li>
+      <li><a href="#footer">Footer</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-text">
+      <h1>Welcome to Bolinao Falls</h1>
+      <p>Experience the beauty of one of Pangasinan’s hidden gems</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Bolinao Falls</h2>
+    <p>Bolinao Falls is a stunning waterfall located in Bolinao, Pangasinan.</p>
+    <p><strong>Why visit?</strong> Relaxing natural scenery, swimming, and photography opportunities.</p>
+    <p><strong>Best Time to Visit:</strong> Dry season (November to May) to enjoy full water flow and safer trails.</p>
+  </section>
+
+  <!-- HISTORY / FACTS -->
+  <section id="history">
+    <h2>History & Facts</h2>
+    <ul>
+      <li>Bolinao Falls has been a popular tourist spot since the early 2000s.</li>
+      <li>The area is surrounded by lush forests and natural pools.</li>
+      <li>Known for its multi-tiered waterfalls and clean water.</li>
+    </ul>
+  </section>
+
+  <!-- HOW TO GET THERE -->
+  <section id="how-to-get-there">
+    <h2>How to Get There (from Dagupan)</h2>
+    <p>Distance: ~83.2 km (~2hours 9mins by car/bus)</p>
+    <ol>By bus or Van</ol>
+    <ol>
+      <li>From Dagupan, take a mini bus or van going to Bolinao. </li>
+      <li>When you arrive at Sampaloc, Bolinao, get off the bus or van.</li>
+      <li>You will see a sign pointing to Bolinao Falls.</li>
+      <li>From there, ride a tricycle going to the falls.</li>
+    </ol>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities">
+    <h2>Activities</h2>
+    <ul>
+      <li>Swimming in natural pools</li>
+      <li>Nature photography</li>
+      <li>Picnics and relaxation</li>
+    </ul>
+    <p><strong>Entrance Fee:</strong> ₱50 per person (approx.)</p>
+  </section>
+
+  <!-- PERSONAL REVIEW -->
+  <section id="review">
+    <h2>Personal Review</h2>
+    <p>Bolinao Falls is a refreshing getaway from city life. The natural pools are clean, the waterfalls are picturesque, and the surroundings are peaceful. Highly recommended for friends and family outings.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>Group Members: [Member 1], [Member 2], [Member 3], [Member 4]</p>
+    <p>© 2025 Bolinao Falls. All Rights Reserved.</p>
+  </footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll('section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');   // slide in
+      } else {
+        entry.target.classList.remove('visible'); // reset when out of view
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+</body>
+</html>
