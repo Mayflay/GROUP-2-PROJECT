@@ -1,4 +1,4 @@
-/* GENERAL */
+/* GENERAL *//* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.2;
-  background: linear-gradient(#456882, #E3E3E3);
+  background: linear-gradient(#018790, #005461);
   color: #333;
 }
 
@@ -31,7 +31,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: linear-gradient(to bottom, #313647, #435663);
+  background: #234C6A;
   color: white;
   position: sticky;
   top: 0;
@@ -65,7 +65,10 @@ nav {
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7rem;
   text-shadow: 2px 2px 5px #000;
 }
 
@@ -77,8 +80,8 @@ nav {
 
 /* SECTIONS */
 section {
-  margin: 12rem auto;      /* large spacing between sections */
-  padding: 8rem 4rem;      /* more padding inside */
+  margin: 12rem auto;
+  padding: 8rem 4rem;
   max-width: 1000px;
   background: white;
   border-radius: 10px;
@@ -118,7 +121,7 @@ section.visible {
 }
 
 #activities {
-  background: url('Assets/activities.png') center/cover no-repeat;
+  background: url('Assets/random.png') center/cover no-repeat;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
@@ -154,7 +157,7 @@ section.visible {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #97BC62;
+  color: #00B7B5;
 }
 
 ul, ol {
@@ -166,7 +169,7 @@ ul, ol {
 footer {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(to bottom,#435663 , #313647);
+  background: #234C6A;
   color: white;
   margin-top: 5rem;
 }
@@ -192,3 +195,4 @@ footer {
     margin-bottom: 4rem;
   }
 }
+
